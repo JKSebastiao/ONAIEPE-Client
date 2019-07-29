@@ -1,0 +1,152 @@
+<div class="col-md-12 col-lg-12 col-xxxl-12">
+  <nb-card>
+    <nb-card-body>
+      <nb-stepper #stepper orientation="horizontal">
+        <nb-step [stepControl]="personalInfoForm" label="Dados Pessoais">
+          <form [formGroup]="personalInfoForm" (ngSubmit)="onPersonalInfoFormSubmit()" class="step-container">
+            <h5>Dados Pessoais</h5>
+            <div class ="row">
+
+            <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+              <input type="text" placeholder="Nome" class="form-control" formControlName="name"
+                     [ngClass]="{'form-control-danger': personalInfoForm.invalid && (personalInfoForm.dirty || personalInfoForm.touched)}">  
+            </div>
+            <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                <input type="text" placeholder="Apelido(último nome)" class="form-control" formControlName="surname"
+                       [ngClass]="{'form-control-danger': personalInfoForm.invalid && (personalInfoForm.dirty || personalInfoForm.touched)}">            
+              </div>
+            </div>
+            <div class ="row">
+              <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                <input type="text" placeholder="Sexo" class="form-control" formControlName="gender"
+                         [ngClass]="{'form-control-danger': personalInfoForm.invalid && (personalInfoForm.dirty || personalInfoForm.touched)}">           
+              </div>
+              <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                <input type="text" placeholder="Naturalidade" class="form-control" formControlName="naturality"
+                           [ngClass]="{'form-control-danger': personalInfoForm.invalid && (personalInfoForm.dirty || personalInfoForm.touched)}">             
+              </div>
+            </div>
+            <button nbButton nbStepperNext>Próximo</button>
+          </form>
+        </nb-step>
+        <nb-step [stepControl]="studiesInfoForm" label="Dados da formação">
+          <form [formGroup]="studiesInfoForm" (ngSubmit)="onStudiesInfoFormSubmit()" class="step-container">
+            <h5>Dados da formação</h5>
+              <div class ="row">
+                <div class="input-group col-md-12" [ngStyle]="{'margin-top': '1em'}">
+                  <input type="text" placeholder="Universidade" class="form-control" formControlName="university"
+                           [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">           
+                </div>
+              </div>
+              <div class ="row">
+                  <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                    <select placeholder="'Continente'" class="form-control" formControlName="continent" [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">
+                      <option>Continent</option>
+                      <option *ngFor="let continent of continents" value="continent">{{continent}}</option>
+                    </select>          
+                  </div>
+                  <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                      <select placeholder="'Pais'" class="form-control" formControlName="countre" [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">
+                        <option >País</option>
+                        <option *ngFor="let pais of paises" value="continent">{{pais}}</option>
+                      </select>          
+                    </div>
+                </div>
+                <div class ="row">
+                    <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                      <input type="text" placeholder="Área de formação" class="form-control" formControlName="field"
+                               [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">           
+                    </div>
+                    <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                      <input type="text" placeholder="Curso" class="form-control" formControlName="course"
+                                 [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">             
+                    </div>
+                  </div>
+                  <div class ="row">
+                      <div class="input-group col-md-4" [ngStyle]="{'margin-top': '1em'}">
+                        <input nbInput placeholder="Data de início" [nbDatepicker]="formpickerStart" formControlName="startDate"
+                          [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">
+                        <nb-datepicker #formpickerStart></nb-datepicker>          
+                      </div>
+                      <div class="input-group col-md-4" [ngStyle]="{'margin-top': '1em'}">
+                        <input nbInput placeholder="Data de fim" [nbDatepicker]="formpickerEnd" formControlName="endDate"
+                          [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">
+                        <nb-datepicker #formpickerEnd></nb-datepicker>             
+                      </div>
+                      <div class="input-group col-md-4" [ngStyle]="{'margin-top': '1em'}">
+                          <select placeholder="Pais" class="form-control" formControlName="degree" [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">
+                              <option  selected >Titulo</option>
+                              <option *ngFor="let degree of degrees" value="degree">{{degree}}</option>
+                          </select>           
+                        </div>
+                    </div>
+                    <div class ="row">
+                        <div class="input-group col-md-3" [ngStyle]="{'margin-top': '1em'}">
+                            <input type="radio" placeholder="Sexo" class="form-control" formControlName="sponsor"
+                                     [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">           
+                          </div>
+                          <div class="input-group col-md-3" [ngStyle]="{'margin-top': '1em'}">
+                              <input type="text" placeholder="Sexo" class="form-control" formControlName="sponsor"
+                                       [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">           
+                            </div>
+                            <div class="input-group col-md-3" [ngStyle]="{'margin-top': '1em'}">
+                                <input type="text" placeholder="Sexo" class="form-control" formControlName="sponsor"
+                                         [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">           
+                              </div>
+                        <div class="input-group col-md-3" [ngStyle]="{'margin-top': '1em'}">
+                          <input type="text" placeholder="Naturalidade" class="form-control" formControlName="sponsor"
+                                     [ngClass]="{'form-control-danger': studiesInfoForm.invalid && (studiesInfoForm.dirty || studiesInfoForm.touched)}">             
+                        </div>
+                            
+
+                            <div class="radio-group">
+                                <input type="radio" id="option-one" name="selector"><label for="option-one">INAGBE</label>
+                                <input type="radio" id="option-two" name="selector"><label for="option-two">Cooperacao</label>
+                                <input type="radio" id="option-three" name="selector"><label for="option-three">Conta propria</label>
+                                  </div>
+                      </div>
+            <button nbButton nbStepperPrevious>Voltar</button>
+            <button nbButton nbStepperNext>Próximo</button>
+          </form>
+        </nb-step>
+        <nb-step [stepControl]="contactInfoForm" label="Contactos">
+          <form [formGroup]="contactInfoForm" (ngSubmit)="onContactInfoFormSubmit()" class="step-container">
+            <h5>Contactos</h5>
+            <div class ="row">
+                <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                  <input type="text" placeholder="Número de telefone" class="form-control" formControlName="mobilePhone"
+                           [ngClass]="{'form-control-danger': contactInfoForm.invalid && (contactInfoForm.dirty || contactInfoForm.touched)}">           
+              </div>
+              <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                  <input type="text" placeholder="E-mail" class="form-control" formControlName="email"
+                           [ngClass]="{'form-control-danger': contactInfoForm.invalid && (contactInfoForm.dirty || contactInfoForm.touched)}">           
+              </div>
+              </div>
+            <button nbButton nbStepperPrevious>Voltar</button>
+            <button nbButton nbStepperNext>Próximo</button>
+          </form>
+        </nb-step>
+        <nb-step [stepControl]="docConfirmationForm" label="Comprovativos">
+          <form [formGroup]="docConfirmationForm" (ngSubmit)="onDocConfirmationFormSubmit()" class="step-container">
+            <h5>Comprovativos dos Estudos</h5>
+            <div class="input-group">
+              <input type="file" placeholder="Enter something" class="form-control" formControlName="fourthCtrl"
+                     [ngClass]="{'form-control-danger': docConfirmationForm.invalid && (docConfirmationForm.dirty || docConfirmationForm.touched)}">
+            </div>
+            <button nbButton nbStepperPrevious>Voltar</button>
+            <button nbButton nbStepperNext>Finalizar</button>
+          </form>
+        </nb-step>
+        <nb-step [stepControl]="confirmation" [hidden]="true" label="Confirmação">
+          <div class="step-container">
+            <span class="far fa-check-circle" style="font-size: 48px; color: #37eb37;"></span>
+            <h6 class="sucess-text">O seu cadastro foi terminado com sucesso!</h6>
+            <p> Por favor aguarde pela aprovação. A a direção da ONAIEPE vai informar-te sobre o estado do cadastro.</p>
+            <h5>Obrigado.</h5>
+            <button nbButton (click)="stepper.reset()">Fechar</button>
+          </div>
+        </nb-step>
+      </nb-stepper>
+    </nb-card-body>
+  </nb-card>
+</div>

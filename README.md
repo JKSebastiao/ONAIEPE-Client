@@ -1,145 +1,71 @@
-Introduction
-============
+# ngx-admin [<img src="https://i.imgur.com/oMcxwZ0.png" alt="Eva Design System" height="20px" />](https://eva.design) [![Build Status](https://travis-ci.org/akveo/ngx-admin.svg?branch=master)](https://travis-ci.org/akveo/ngx-admin) [![Dependency Status](https://david-dm.org/akveo/ngx-admin/status.svg)](https://david-dm.org/akveo/ng2-admin)
 
-**AdminLTE** -- is a fully responsive admin template. Based on **Bootstrap 3** framework. Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops. Check out the live preview now and see for yourself. 
+[Who uses ngx-admin?](https://github.com/akveo/ngx-admin/issues/1645)| [Documentation](https://akveo.github.io/ngx-admin/?utm_source=github&utm_medium=ngx_admin_readme&utm_campaign=themes) | [Installation Guidelines](https://akveo.github.io/ngx-admin/docs/getting-started/what-is-ngxadmin?utm_source=github&utm_medium=ngx_admin_readme&utm_campaign=themes)
 
-**Download & Preview on [Almsaeed Studio](http://almsaeedstudio.com)**
+# Admin template based on Angular 8+ and <a href="https://github.com/akveo/nebular">Nebular</a>
+<a target="_blank" href="http://akveo.com/ngx-admin/pages/dashboard?theme=corporate&utm_source=github&utm_medium=ngx_admin_readme&utm_campaign=main_pic"><img src="https://i.imgur.com/mFdqvgG.png"/></a>
 
-Looking for Premium Templates?
-------------------------------
-**Almsaeed studio just opened a new premium templates page. Hand picked to insure the best quality and the most affordable prices. Visit http://almsaeedstudio.com/premium for more information.**
+### Backend Integration Bundles
+Easy way to integrate ngx-admin with .NET, Node.js, Java or PHP. [Checkout our Store](https://store.akveo.com/?utm_source=github&utm_medium=ngx_admin_readme) for ready to use Backend Bundles.
 
 
-!["AdminLTE Presentation"] (http://almsaeedstudio.com/AdminLTE2.png "AdminLTE Presentation")
+### With 3 stunning visual themes
 
-**AdminLTE** has been carefully coded with clear comments in all of its JS, LESS and HTML files. LESS has been used to increase code customizability.
 
-Installation
-------------
-There are multiple ways to install AdminLTE.
 
-####Download:
+#### Default
+<a target="_blank" href="http://akveo.com/ngx-admin/pages/dashboard?theme=default&utm_source=github&utm_medium=ngx_admin_readme&utm_campaign=themes"><img src="https://i.imgur.com/Kn3xDKQ.png"/></a>
 
-Download from Github or [visit Almsaeed Studio](http://almsaeedstudio.com) and download the lateset release.
+#### Dark
+<a target="_blank" href="http://akveo.com/ngx-admin/pages/dashboard?theme=dark&utm_source=github&utm_medium=ngx_admin_readme&utm_campaign=themes"><img src="https://i.imgur.com/ZM0bJei.png"/></a>
 
-####Using The Command Line:
+#### Cosmic
+<a target="_blank" href="http://akveo.com/ngx-admin/pages/dashboard?theme=cosmic&utm_source=github&utm_medium=ngx_admin_readme&utm_campaign=themes"><img src="https://i.imgur.com/iJu2YDF.png"/></a>
 
-**Github**
+#### Corporate
+<a target="_blank" href="http://akveo.com/ngx-admin/pages/dashboard?theme=corporate&utm_source=github&utm_medium=ngx_admin_readme&utm_campaign=themes"><img src="https://i.imgur.com/GpUt6NW.png"/></a>
 
-- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine 
-```
-git clone https://github.com/YOUR_USERNAME/AdminLTE.git"
-```
+### What's included:
 
-**Bower**
+- Angular 7+ & Typescript
+- Bootstrap 4+ & SCSS
+- Responsive layout
+- RTL support
+- High resolution
+- Flexibly configurable themes with **hot-reload** (3 themes included)
+- Authentication module with multiple providers
+- 40+ Angular Components
+- 60+ Usage Examples
 
-```
-bower install git://github.com/almasaeed2010/AdminLTE.git
-```
+### Demo
 
-**Composer**
+<a target="_blank" href="http://akveo.com/ngx-admin/">Live Demo</a>
 
-```
-composer require "almasaeed2010/adminlte=~2.0"
-```
+## Documentation
+This template is using [Nebular](https://github.com/akveo/nebular) modules set, [here you can find documentation and other useful articles](https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit).
 
-Documentation
--------------
-Visit the [online documentation](http://almsaeedstudio.com/themes/AdminLTE/documentation/index.html) for the most
-updated guide. Information will be added on a weekly basis.
+### Empty starter kit
+Don't need all the pages and modules and just looking for an empty starter kit for your next project? Check out our [starter-kit branch](https://github.com/akveo/ngx-admin/tree/starter-kit).
 
-Browser Support
----------------
-- IE 9+
-- Firefox (latest)
-- Chrome (latest)
-- Safari (latest)
-- Opera (latest)
+## BrowserStack
+This project runs its tests on multiple desktop and mobile browsers using [BrowserStack](http://www.browserstack.com).
 
-Contribution
-------------
-Contribution are always **welcome and recommended**! Here is how:
+<img src="https://cloud.githubusercontent.com/assets/131406/22254249/534d889e-e254-11e6-8427-a759fb23b7bd.png" height="40" />
 
-- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine ```git clone https://github.com/YOUR_USERNAME/AdminLTE.git"
-- Make your changes
-- Create a pull request
+## More from Akveo
 
-#### Contribution Requirements:
+- [Eva Icons](https://github.com/akveo/eva-icons) - 480+ beautiful Open Source icons
+- [Nebular](https://github.com/akveo/nebular) - Angular Components, Auth and Security
 
-- When you contribute, you agree to give a non-exclusive license to Almsaeed Studio to use that contribution in any context as we (Almsaeed Studio) see appropriate.
-- If you use content provided by another party, it must be appropriately licensed using an [open source](http://opensource.org/licenses) license.
-- Contributions are only accepted through Github pull requests.
-- Finally, contributed code must work in all supported browsers (see above for browser support).
+### How can I support developers?
+- Star our GitHub repo :star:
+- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
+- Follow us on [Twitter](https://twitter.com/akveo_inc) :feet:
+- Like our page on [Facebook](https://www.facebook.com/akveo/) :thumbsup:
 
-License
--------
-AdminLTE is an open source project by [Almsaeed Studio](http://almsaeedstudio.com) that is licensed under [MIT](http://opensource.org/licenses/MIT). Almsaeed Studio
-reserves the right to change the license of future releases.
+### Looking for engineering services? 
+Visit [our homepage](http://akveo.com/) or simply leave us a message to [contact@akveo.com](mailto:contact@akveo.com). We will be happy to work with you!
 
-Legacy Realeases
-----------------
-AdminLTE 1.x can be easily upgraded to 2.x using [this guide](http://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#browsers), but if you intend to keep using AdminLTE 1.x, you can download the latest release from the [releases](https://github.com/almasaeed2010/AdminLTE/releases) section above.
-
-Change log
-----------
-**v2.0:**
-
-- Major layout bug fixes
-- Change in layout mark up
-- Added transitions to the sidebar
-- New skins and modified previous skins
-- Change in color scheme to a more complementing scheme 
-- Added footer support
-- Removed pace.js from the main app.js
-- Added support for collapsed sidebar as an initial state (add .sidebar-collapse to the body tag)
-- Added boxed layout (.layout-boxed)
-- Enhanced consistency in padding and margining
-- Updated Bootstrap to 3.3.2 
-- Fixed navbar dropdown menu on small screens positioning issues.
-- Updated Ion Icons to 2.0.0
-- Updated FontAwesome to 4.3.0
-- Added ChartJS 1.0.1
-- Removed iCheck dependency
-- Created Dashboard 2.0
-- Created new Chat widget (DirectChat)
-- Added transitions to DirectChat
-- Added contacts pane to DirectChat
-- Changed .right-side to .content-wrapper
-- Changed .navbar-right to .navbar-custom-menu
-- Removed unused files
-- Updated lockscreen style (HTML markup changed!)
-- Updated Login & Registration pages (HTML markup changed!)
-- Updated buttons style.
-- Enhanced border-radius consistency
-- Added mailbox: inbox, read, and compose pages
-- Bootstrap & jQuery are now hosted locally
-- Created documentation.
-
-**ver 1.2:**
-
-- Fixed the sidebar scroll issue when using the fixed layout.
-- Added [Bootstrap Social Buttons](http://lipis.github.io/bootstrap-social/ "Bootstrap Social") plugin.
-- Fixed RequireJS bug. Thanks to [StaticSphere](https://github.com/StaticSphere "github user"). 
-
-**ver 1.1:**
-
-- Added new skin. class: .skin-black
-- Added [pace](http://github.hubspot.com/pace/docs/welcome/ "pace") plugin.
-
-Image Credits
--------------
-[Pixeden](http://www.pixeden.com/psd-web-elements/flat-responsive-showcase-psd)
-
-[Graphicsfuel](http://www.graphicsfuel.com/2013/02/13-high-resolution-blur-backgrounds/)
-
-[Pickaface](http://pickaface.net/)
-
-[Unsplash](https://unsplash.com/)
-
-Donations
----------
-Donations are **greatly appreciated!**
-
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "AdminLTE Presentation")](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=629XCUSXBHCBC "Donate")
+### From Developers
+Made with :heart: by [Akveo team](http://akveo.com/). Follow us on [Twitter](https://twitter.com/akveo_inc) to get the latest news first!
+We're always happy to receive your feedback!

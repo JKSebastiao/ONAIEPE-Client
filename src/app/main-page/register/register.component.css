@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+:host ::ng-deep nb-stepper .step-content {
+  text-align: center;
+}
+
+:host ::ng-deep nb-stepper .step-content button {
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.sucess-text {
+  color: #37eb37;
+}
+
+nb-card-body {
+  overflow: visible;
+  padding-top: 0;
+}
+
+nb-card-body > * {
+  margin-top: 1rem;
+}
+
+.full-name-inputs,
+.validation-checkboxes {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.full-name-inputs > *,
+.validation-checkboxes > * {
+  margin: 0 0.5rem;
+}
+
+.checkbox-radio {
+  display: flex;
+}
+
+.demo-items {
+  flex: 1 0 33%;
+}
+
+.radio-control {
+  display: inline-block;
+}
+
+body {
+  background: #0a97f5;
+  font-family: roboto;
+}
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: #ceeafd;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+input[type=radio]:checked + label {
+  color: white;
+  background: #6cc1f9;
+}
+
+label + input[type=radio] + label {
+  border-left: solid 1px #6cc1f9;
+}
+
+.radio-group {
+  border: solid 1px #6cc1f9;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
