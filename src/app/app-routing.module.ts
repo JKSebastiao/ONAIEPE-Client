@@ -21,6 +21,11 @@ const routes: Routes = [
       .then(m => m.MainPageModule),
   },
   {
+    path: 'admin-painel',
+    loadChildren: () => import('./admin-painel/admin-painel.module')
+      .then(m => m.AdminPainelModule),
+  },
+  {
     path: 'auth',
     component: NbAuthComponent,
     children: [
