@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NbMenuService } from '@nebular/theme';
 import { LocalDataSource } from 'ng2-smart-table';
 import { SmartTableData } from '../../@core/data/smart-table';
 import { Router } from '@angular/router';
@@ -7,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'ngx-graduates',
   templateUrl: './new-register-admin.component.html',
-  styleUrls: ['./new-register-admin.component.scss']
+  styleUrls: ['./new-register-admin.component.scss'],
 })
 export class NewRegisterAdminComponent implements OnInit {
 
@@ -55,13 +54,13 @@ export class NewRegisterAdminComponent implements OnInit {
         editable: false,
       },
     },
-    actions:{
+    actions: {
       columnTitle: 'Opções',
       position: 'right',
-      delete: false
+      delete: false,
     },
     mode: 'external',
-    noDataMessage: 'Nenhum daddo encontrado'
+    noDataMessage: 'Nenhum daddo encontrado',
   };
 
   source: LocalDataSource = new LocalDataSource();
@@ -71,14 +70,16 @@ export class NewRegisterAdminComponent implements OnInit {
     this.source.load(data);
   }
   ngOnInit(): void {
-    
+
   }
-  onCreate(event):void{
-    console.log("Create new");
+  onCreate(event): void {
+    // tslint:disable-next-line: no-console
+    console.log('Create new');
     this.settings.actions.delete = true;
   }
 
   onUserRowSelected(event): void {
+   // tslint:disable-next-line: no-console
    console.log(event.data);
   }
   onViewDetails(event): void {

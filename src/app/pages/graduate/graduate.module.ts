@@ -8,7 +8,7 @@ import { GraduateRoutingModule } from './graduate-routing.module';
   declarations: [GraduateComponent, ProfileComponent],
   imports: [
     CommonModule,
-    GraduateRoutingModule
-  ]
+    GraduateRoutingModule,
+  ],
 })
 export class GraduateModule { }

@@ -8,7 +8,21 @@ import { NewRegisterDetailsAdminComponent } from './new-register-details-admin/n
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ThemeModule } from '../@theme/theme.module';
-import { NbMenuModule, NbCardModule, NbIconModule, NbInputModule, NbTabsetModule, NbRouteTabsetModule, NbStepperModule, NbButtonModule, NbActionsModule, NbUserModule, NbCheckboxModule, NbRadioModule, NbDatepickerModule, NbSelectModule } from '@nebular/theme';
+import {
+  NbMenuModule,
+  NbCardModule,
+  NbIconModule,
+  NbInputModule,
+  NbTabsetModule,
+  NbRouteTabsetModule,
+  NbStepperModule,
+  NbButtonModule,
+  NbActionsModule,
+  NbUserModule,
+  NbCheckboxModule,
+  NbRadioModule,
+  NbDatepickerModule,
+  NbSelectModule } from '@nebular/theme';
 import { MiscellaneousModule } from '../pages/miscellaneous/miscellaneous.module';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { AdminPainelRoutingModule } from './admin-painel-routing.module';
@@ -17,7 +31,7 @@ import { AdminPainelRoutingModule } from './admin-painel-routing.module';
 
 @NgModule({
   declarations: [GraduatesAdminComponent, GraduateDetailsAdminComponent, AdminPainelComponent,
-  NewRegisterAdminComponent,NewRegisterDetailsAdminComponent, DashboardComponent],
+  NewRegisterAdminComponent, NewRegisterDetailsAdminComponent, DashboardComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -40,6 +54,6 @@ import { AdminPainelRoutingModule } from './admin-painel-routing.module';
     NbRadioModule,
     NbDatepickerModule,
     NbSelectModule,
-  ]
+  ],
 })
 export class AdminPainelModule { }

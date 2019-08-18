@@ -8,29 +8,35 @@ import { GraduatesComponent } from './graduates/graduates.component';
 import { GraduateDetailsComponent } from './graduate-details/graduate-details.component';
 import { MainPageRoutingModule } from './main-page-routing.module';
 import { ThemeModule } from '../@theme/theme.module';
-import { 
-  NbMenuModule, 
-  NbCardModule, 
-  NbInputModule, 
-  NbIconModule, 
-  NbTabsetModule, 
-  NbRouteTabsetModule, 
-  NbStepperModule, 
-  NbButtonModule, 
-  NbActionsModule, 
-  NbUserModule, 
-  NbCheckboxModule, 
-  NbRadioModule, 
-  NbDatepickerModule, 
+import {
+  NbMenuModule,
+  NbCardModule,
+  NbInputModule,
+  NbIconModule,
+  NbTabsetModule,
+  NbRouteTabsetModule,
+  NbStepperModule,
+  NbButtonModule,
+  NbActionsModule,
+  NbUserModule,
+  NbCheckboxModule,
+  NbRadioModule,
+  NbDatepickerModule,
   NbSelectModule } from '@nebular/theme';
 import { MiscellaneousModule } from '../pages/miscellaneous/miscellaneous.module';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FormsRoutingModule } from '../pages/forms/forms-routing.module';
 
 @NgModule({
-  declarations: [MainPageComponent, HomeComponent, AboutComponent, ContactComponent, GraduatesComponent, GraduateDetailsComponent, RegisterComponent],
+  declarations: [
+    MainPageComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    GraduatesComponent,
+    GraduateDetailsComponent,
+    RegisterComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -53,6 +59,6 @@ import { FormsRoutingModule } from '../pages/forms/forms-routing.module';
     NbRadioModule,
     NbDatepickerModule,
     NbSelectModule,
-  ]
+  ],
 })
 export class MainPageModule { }

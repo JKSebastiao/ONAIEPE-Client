@@ -8,7 +8,7 @@ describe('AdminPainelComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdminPainelComponent ]
+      declarations: [ AdminPainelComponent ],
     })
     .compileComponents();
   }));

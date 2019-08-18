@@ -94,7 +94,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     return false;
   }
 
-  register(){
-    this.router.navigateByUrl("/home/register")
+  register() {
+    this.router.navigateByUrl('/home/register');
   }
 }

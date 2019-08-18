@@ -8,7 +8,7 @@ describe('GraduatesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NewRegisterAdminComponent ]
+      declarations: [ NewRegisterAdminComponent ],
     })
     .compileComponents();
   }));

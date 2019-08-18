@@ -19,7 +19,7 @@ import {
   NbSidebarModule,
   NbToastrModule,
   NbWindowModule,
-} from '@nebular/theme'
+} from '@nebular/theme';
 
 @NgModule({
   declarations: [AppComponent],

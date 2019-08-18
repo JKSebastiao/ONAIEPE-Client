@@ -4,7 +4,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'ngx-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
 
@@ -13,9 +13,9 @@ export class RegisterComponent implements OnInit {
   contactInfoForm: FormGroup;
   docConfirmationForm: FormGroup;
 
-  continents = ['Africa','Europa', 'America', 'Asia']
-  paises = ['Angola','Brasil', 'Portugal', 'Poland']
-  degrees = ['doutor engenheiro','doutor','mestre engenheiro','mestre', 'engenheiro','licenciado']
+  continents = ['Africa', 'Europa', 'America', 'Asia'];
+  paises = ['Angola', 'Brasil', 'Portugal', 'Poland'];
+  degrees = ['doutor engenheiro', 'doutor', 'mestre engenheiro', 'mestre', 'engenheiro', 'licenciado'];
 
   constructor(private fb: FormBuilder) {
   }
@@ -28,7 +28,7 @@ export class RegisterComponent implements OnInit {
       naturality: ['', Validators.required],
     });
 
-    this.studiesInfoForm= this.fb.group({
+    this.studiesInfoForm = this.fb.group({
       university: ['', Validators.required],
       continent: ['', Validators.required],
       countre: ['', Validators.required],
@@ -47,7 +47,6 @@ export class RegisterComponent implements OnInit {
     this.docConfirmationForm = this.fb.group({
       fourthCtrl: ['', Validators.required],
     });
-    
   }
 
   onPersonalInfoFormSubmit() {

@@ -1,7 +1,7 @@
 import { NbMenuItem } from '@nebular/theme';
 
 export const ADMIN_PAINEL_MENU_ITEMS: NbMenuItem[] = [
-  
+
   {
     title: 'MENU',
     group: true,
