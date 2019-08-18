@@ -7,6 +7,8 @@ import { AdminPainelComponent } from './admin-painel.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewRegisterAdminComponent } from './new-register-admin/new-register-admin.component';
 import { NewRegisterDetailsAdminComponent } from './new-register-details-admin/new-register-details-admin.component';
+import { CreateOfferComponent } from './create-offer/create-offer.component';
+import { OffersAdminComponent } from './offers-admin/offers-admin.component';
 
 const routes: Routes = [
   {
@@ -32,6 +34,14 @@ const routes: Routes = [
       {
         path: 'new-register/:id',
         component: NewRegisterDetailsAdminComponent,
+      },
+      {
+        path: 'create-offer',
+        component: CreateOfferComponent,
+      },
+      {
+        path: 'offers',
+        component: OffersAdminComponent,
       },
       {
         path: 'miscellaneous',

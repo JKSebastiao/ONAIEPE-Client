@@ -26,12 +26,15 @@ import {
 import { MiscellaneousModule } from '../pages/miscellaneous/miscellaneous.module';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { AdminPainelRoutingModule } from './admin-painel-routing.module';
+import { CreateOfferComponent } from './create-offer/create-offer.component';
+import { OffersAdminComponent } from './offers-admin/offers-admin.component';
 
 
 
 @NgModule({
   declarations: [GraduatesAdminComponent, GraduateDetailsAdminComponent, AdminPainelComponent,
-  NewRegisterAdminComponent, NewRegisterDetailsAdminComponent, DashboardComponent],
+  NewRegisterAdminComponent, NewRegisterDetailsAdminComponent, DashboardComponent, CreateOfferComponent,
+  OffersAdminComponent],
   imports: [
     CommonModule,
     FormsModule,

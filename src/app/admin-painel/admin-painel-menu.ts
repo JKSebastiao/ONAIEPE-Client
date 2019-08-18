@@ -22,6 +22,16 @@ export const ADMIN_PAINEL_MENU_ITEMS: NbMenuItem[] = [
     link: '/admin-painel/new-register',
   },
   {
+    title: 'Criar oferta',
+    icon: 'people-outline',
+    link: '/admin-painel/create-offer',
+  },
+  {
+    title: 'Ofertas',
+    icon: 'people-outline',
+    link: '/admin-painel/offers',
+  },
+  {
     title: 'Contactos',
     icon: 'email-outline',
     link: '/home/contact',

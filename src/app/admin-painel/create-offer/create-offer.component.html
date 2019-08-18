@@ -1,0 +1,33 @@
+<div class="col-md-12 col-lg-12 col-xxxl-12">
+        <nb-card>
+          <nb-card-body>
+                <form [formGroup]="offerForm" class="step-container">
+                  <h5>Oferta de trabalho</h5>
+                  <div class ="row">
+      
+                  <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                    <input type="text" placeholder="Empresa" class="form-control" formControlName="company"
+                           [ngClass]="{'form-control-danger': offerForm.invalid && (offerForm.dirty || offerForm.touched)}">  
+                  </div>
+                  <div class="input-group col-md-6" [ngStyle]="{'margin-top': '1em'}">
+                      <input type="text" placeholder="Número de candidatos" class="form-control" formControlName="nrCandidate"
+                             [ngClass]="{'form-control-danger': offerForm.invalid && (offerForm.dirty || offerForm.touched)}">            
+                    </div>
+                  </div>
+                  <div class ="row">
+                    <div class="input-group col-md-12" [ngStyle]="{'margin-top': '1em'}">
+                      <textarea type="text" placeholder="Observação" class="form-control" formControlName="observation"
+                               [ngClass]="{'form-control-danger': offerForm.invalid && (offerForm.dirty || offerForm.touched)}"> </textarea>         
+                    </div>
+                  </div>
+                </form>
+          </nb-card-body>
+          <nb-card-footer>
+            <div class="buttons-row">
+              <button nbButton [status]="statuses[4]">Canselar</button>
+              <button nbButton [status]="statuses[1]" (click) ="onOfferFormSubmit()">Salvar</button>
+            </div>
+        </nb-card-footer>
+        </nb-card>
+      </div>
+      

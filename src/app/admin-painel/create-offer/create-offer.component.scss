@@ -1,0 +1,107 @@
+:host ::ng-deep nb-stepper .step-content {
+    text-align: center;
+  
+    button {
+      cursor: pointer;
+      margin: 0.5rem;
+    }
+}
+
+.sucess-text{
+    color: #37eb37;
+}
+
+nb-card-body {
+  overflow: visible;
+  padding-top: 0;
+
+  > * {
+    margin-top: 1rem;
+  }
+}
+
+.full-name-inputs,
+.validation-checkboxes {
+  display: flex;
+  margin: 0 -0.5rem;
+
+  > * {
+    margin: 0 0.5rem;
+  }
+}
+
+.checkbox-radio {
+  display: flex;
+}
+
+.demo-items {
+  flex: 1 0 33%;
+}
+
+.radio-control{
+  display: inline-block;
+}
+
+$bg: #0a97f5;
+$fg: lighten($bg,20%);
+$borderWidth: 1px;
+
+body {
+  background: $bg;
+  font-family: roboto;
+}
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: lighten($bg,40%);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+input[type=radio]:checked + label{
+  color: lighten($bg,60%);
+  background: $fg;
+}
+
+label + input[type=radio] + label {
+  border-left: solid $borderWidth $fg;
+}
+.radio-group {
+  border: solid $borderWidth $fg;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import '../../@theme/styles/themes';
+
+@include nb-install-component() {
+  .buttons-row {
+    margin: -0.5rem;
+    text-align: right;
+  }
+
+  button[nbButton] {
+    margin: 0.5rem;
+  }
+
+
+  .action-icon {
+    @include nb-ltr(margin-right, 0.5rem);
+    @include nb-rtl(margin-left, 0.5rem);
+  }
+
+  .actions-card {
+    height: 8rem;
+  }
+}
